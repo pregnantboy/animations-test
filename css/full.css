@@ -31,26 +31,73 @@
   	height:350px;
   	width:350px;	
 }
-/*
+
+.cashier {
+	position: relative;
+	top: 80px;
+	left:-30px;
+  	height:400px;
+  	width:320;	
+}
+
+.handwithcard {
+	position:relative;
+	top:30px;
+	left:-183px;
+	height:60px;
+	width:100px;
+	-webkit-transform-origin: 100% 0%;
+	 -webkit-animation: shake 3s infinite;  Chrome, Safari, Opera  
+    animation: shake 3s infinite;
+}
+.handwithoutcard {
+	position:relative;
+	top:54px;
+	left:-338px;
+	height:20px;
+	width:102px;
+	-webkit-transform-origin: 0% 0%;
+	 -webkit-animation: shake2 3s infinite;  Chrome, Safari, Opera  
+    animation: shake2 3s infinite;
+}
+
 @-webkit-keyframes orbit {
-   0%   {top: 0px; left:100px;}
-    25%  {top: -50px; left:70px;}
-    50%	 {top: -75px; left:0px;}
-    75%  {top: -50px; left:-70px;}
-    100% {top: 0px; left:-100px;}
-}*/
+   0%   {transform:rotate(20deg);animation-timing-function: linear;}
+    50% {transform: rotate(-100deg); animation-timing-function: linear;}
+    100%   {transform: rotate(20deg);animation-timing-function: linear;}
+}
 
 @keyframes orbit {
     0%   {transform:rotate(20deg);animation-timing-function: linear;}
-   /* 13%  {transform:rotate(-15deg); animation-timing-function: linear;}
-    25%	 {transform:rotate(-45deg); animation-timing-function: linear;}
-    37%  {transform: rotate(-70deg); animation-timing-function: linear;}*/
     50% {transform: rotate(-100deg); animation-timing-function: linear;}
-   /* 62%  {transform: rotate(-70deg); animation-timing-function: linear;}
-    75%	 {transform: rotate(-45deg); animation-timing-function: linear;}
-    87%  {transform: rotate(-15deg); animation-timing-function: linear;}*/
     100%   {transform: rotate(20deg);animation-timing-function: linear;}
 }
+
+@-webkit-keyframes shake {
+   0%   {transform:rotate(0deg);animation-timing-function: linear;}
+    50% {transform: rotate(-20deg); animation-timing-function: linear;}
+    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+}
+
+@keyframes shake {
+    0%   {transform:rotate(0deg);animation-timing-function: linear;}
+    50% {transform: rotate(-20deg); animation-timing-function: linear;}
+    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+}
+
+@-webkit-keyframes shake2 {
+   0%   {transform:rotate(0deg);animation-timing-function: linear;}
+    50% {transform: rotate(30deg); animation-timing-function: linear;}
+    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+}
+
+@keyframes shake2 {
+    0%   {transform:rotate(0deg);animation-timing-function: linear;}
+    50% {transform: rotate(30deg); animation-timing-function: linear;}
+    100%   {transform: rotate(0deg);animation-timing-function: linear;}
+}
+
+
 /* Standard syntax */
 /*@keyframes orbit {
     0%   {top: 0px; left:250px; transform: rotate(0deg);animation-timing-function: ease-in;}
