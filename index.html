@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Animations test</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Put your page content here! -->
+    <div id="fullpage">
+        <div class="section blue">
+            <div class="row">
+                <div class = "col-xs-12">
+                    <img class="satellite" src ="img/satellite.png"/>
+                    <img class= "earth" src="img/earth.png"/>
+                </div>
+            </div>
+            <div class = "col-xs-12">
+            </div>
+        </div>
+        <div class="section blue">Some section
+
+
+
+        </div>
+        <div class="section blue">Some section
+
+
+        </div>
+        <div class="section blue">Some section
+
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+     <script src="node_modules/fullpage.js/jquery.fullPage.js"></script>
+     <script src=""
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                $('#fullpage').fullpage();
+        });
+    </script>
+</body>
+
+</html>

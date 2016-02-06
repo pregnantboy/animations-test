@@ -1,0 +1,52 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.blue {
+	background-color: #00bff3;
+	text-align: center;
+	padding-right: 10vw;
+}
+
+.satellite {
+	margin-left: -100px;
+	margin-top: -100px;
+	height: 175	px;
+	width:150px;
+	position:relative;
+	 -webkit-animation: orbit 7s infinite; /* Chrome, Safari, Opera */ 
+    animation: orbit 7s infinite;
+
+}
+
+.earth {
+	position: absolute;
+	margin-left: -160px;
+  	height:300px;
+  	width:300px;	
+}
+/*
+@-webkit-keyframes orbit {
+   0%   {top: 0px; left:100px;}
+    25%  {top: -50px; left:70px;}
+    50%	 {top: -75px; left:0px;}
+    75%  {top: -50px; left:-70px;}
+    100% {top: 0px; left:-100px;}
+}*/
+
+/* Standard syntax */
+@keyframes orbit {
+    0%   {top: 0px; left:250px; transform: rotate(0deg);animation-timing-function: ease-in;}
+    13%  {top: -60px; left:170px;transform: rotate(-15deg); animation-timing-function: linear;}
+    25%	 {top: -75px; left:75px;transform: rotate(-45deg); animation-timing-function: linear;}
+    37%  {top: -60px; left:-20px;transform: rotate(-70deg); animation-timing-function: linear;}
+    50% {top: 0px; left:-100px;transform: rotate(-90deg); animation-timing-function: linear;}
+    62%  {top: -60px; left:-20px;transform: rotate(-70deg); animation-timing-function: linear;}
+    75%	 {top: -75px; left:75px;transform: rotate(-45deg); animation-timing-function: linear;}
+    87%  {top: -60px; left:170px;transform: rotate(-15deg); animation-timing-function: linear;}
+    100%   {top: 0px; left:250px; transform: rotate(0deg);animation-timing-function: ease-out;}
+}
