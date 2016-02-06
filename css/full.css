@@ -13,21 +13,23 @@
 }
 
 .satellite {
-	margin-left: -100px;
-	margin-top: -100px;
+	left: 420px;
+	top: -100px;
 	height: 175	px;
 	width:150px;
 	position:relative;
-	 -webkit-animation: orbit 7s infinite; /* Chrome, Safari, Opera */ 
-    animation: orbit 7s infinite;
+	-webkit-transform-origin: -130px 280px;
+	 -webkit-animation: orbit 9s infinite;  Chrome, Safari, Opera  
+    animation: orbit 9s infinite;
 
 }
 
 .earth {
-	position: absolute;
-	margin-left: -160px;
-  	height:300px;
-  	width:300px;	
+	position: relative;
+	top: 80px;
+	left:-30px;
+  	height:350px;
+  	width:350px;	
 }
 /*
 @-webkit-keyframes orbit {
@@ -38,8 +40,19 @@
     100% {top: 0px; left:-100px;}
 }*/
 
-/* Standard syntax */
 @keyframes orbit {
+    0%   {transform:rotate(20deg);animation-timing-function: linear;}
+   /* 13%  {transform:rotate(-15deg); animation-timing-function: linear;}
+    25%	 {transform:rotate(-45deg); animation-timing-function: linear;}
+    37%  {transform: rotate(-70deg); animation-timing-function: linear;}*/
+    50% {transform: rotate(-100deg); animation-timing-function: linear;}
+   /* 62%  {transform: rotate(-70deg); animation-timing-function: linear;}
+    75%	 {transform: rotate(-45deg); animation-timing-function: linear;}
+    87%  {transform: rotate(-15deg); animation-timing-function: linear;}*/
+    100%   {transform: rotate(20deg);animation-timing-function: linear;}
+}
+/* Standard syntax */
+/*@keyframes orbit {
     0%   {top: 0px; left:250px; transform: rotate(0deg);animation-timing-function: ease-in;}
     13%  {top: -60px; left:170px;transform: rotate(-15deg); animation-timing-function: linear;}
     25%	 {top: -75px; left:75px;transform: rotate(-45deg); animation-timing-function: linear;}
@@ -49,4 +62,4 @@
     75%	 {top: -75px; left:75px;transform: rotate(-45deg); animation-timing-function: linear;}
     87%  {top: -60px; left:170px;transform: rotate(-15deg); animation-timing-function: linear;}
     100%   {top: 0px; left:250px; transform: rotate(0deg);animation-timing-function: ease-out;}
-}
+}*/
