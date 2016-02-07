@@ -47,8 +47,8 @@
 	height:60px;
 	width:100px;
 	-webkit-transform-origin: 100% 0%;
-	 -webkit-animation: shake 3s infinite;  Chrome, Safari, Opera  
-    animation: shake 3s infinite;
+	-webkit-animation: shakeright 2s infinite; 
+    animation: shakeright 2s infinite;
 }
 .handwithoutcard {
 	position:relative;
@@ -57,8 +57,8 @@
 	height:20px;
 	width:102px;
 	-webkit-transform-origin: 0% 0%;
-	 -webkit-animation: shake2 3s infinite;  
-    animation: shake2 3s infinite;
+	 -webkit-animation: shakeleft 2s infinite;  
+    animation: shakeleft 2s infinite;
 }
 
 .mobilebody {
@@ -149,25 +149,25 @@
     100%   {transform: rotate(0deg);animation-timing-function: linear;}
 }
 
-@-webkit-keyframes shake {
+@-webkit-keyframes shakeright {
    0%   {transform:rotate(0deg);animation-timing-function: linear;}
     50% {transform: rotate(-20deg); animation-timing-function: linear;}
     100%   {transform: rotate(0deg);animation-timing-function: linear;}
 }
 
-@keyframes shake {
+@keyframes shakeright {
     0%   {transform:rotate(0deg);animation-timing-function: linear;}
     50% {transform: rotate(-20deg); animation-timing-function: linear;}
     100%   {transform: rotate(0deg);animation-timing-function: linear;}
 }
 
-@-webkit-keyframes shake2 {
-   0%   {transform:rotate(0deg);animation-timing-function: linear;}
+@-webkit-keyframes shakeleft {
+   	0%   {transform:rotate(0deg);animation-timing-function: linear;}
     50% {transform: rotate(30deg); animation-timing-function: linear;}
     100%   {transform: rotate(0deg);animation-timing-function: linear;}
 }
 
-@keyframes shake2 {
+@keyframes shakeleft {
     0%   {transform:rotate(0deg);animation-timing-function: linear;}
     50% {transform: rotate(30deg); animation-timing-function: linear;}
     100%   {transform: rotate(0deg);animation-timing-function: linear;}
